@@ -5,12 +5,10 @@ spring:
     config:
       server:
         git:
-          uri: ssh://git@${vimero.config-server.host}/spring-cloud-config-server.git
-          searchPaths: src/main/resources/repository/${vimero.app.environment}/{application}
-          private-key: ${vimero.config-server.key}
+          uri: https://github.com/vimero/spring-cloud-config-server
+          searchPaths: src/main/resources/repository/dev/{application}
           cloneOnStart: true
           force-pull: true
-          timeout: ${vimero.config-server.timeout}
       fail-fast: true
   profiles:
     active: git

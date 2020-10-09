@@ -1,4 +1,4 @@
-package io.vimero.config;
+package io.vimero.cloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
